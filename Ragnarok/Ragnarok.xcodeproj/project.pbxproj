@@ -11,6 +11,7 @@
 		6CC87C5B2B6A66D7008377D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC87C5A2B6A66D7008377D5 /* ContentView.swift */; };
 		6CC87C5D2B6A66D8008377D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CC87C5C2B6A66D8008377D5 /* Assets.xcassets */; };
 		6CC87C602B6A66D8008377D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CC87C5F2B6A66D8008377D5 /* Preview Assets.xcassets */; };
+		6CE526222B6A745100FEC941 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE526212B6A745100FEC941 /* Intro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		6CC87C5A2B6A66D7008377D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6CC87C5C2B6A66D8008377D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CC87C5F2B6A66D8008377D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CC87C672B6A6E5C008377D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CE526212B6A745100FEC941 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +54,11 @@
 		6CC87C572B6A66D7008377D5 /* Ragnarok */ = {
 			isa = PBXGroup;
 			children = (
+				6CC87C662B6A6CE1008377D5 /* View */,
 				6CC87C582B6A66D7008377D5 /* RagnarokApp.swift */,
 				6CC87C5A2B6A66D7008377D5 /* ContentView.swift */,
 				6CC87C5C2B6A66D8008377D5 /* Assets.xcassets */,
+				6CC87C672B6A6E5C008377D5 /* Info.plist */,
 				6CC87C5E2B6A66D8008377D5 /* Preview Content */,
 			);
 			path = Ragnarok;
@@ -65,6 +70,14 @@
 				6CC87C5F2B6A66D8008377D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CC87C662B6A6CE1008377D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CE526212B6A745100FEC941 /* Intro.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +152,7 @@
 			files = (
 				6CC87C5B2B6A66D7008377D5 /* ContentView.swift in Sources */,
 				6CC87C592B6A66D7008377D5 /* RagnarokApp.swift in Sources */,
+				6CE526222B6A745100FEC941 /* Intro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +289,10 @@
 				DEVELOPMENT_TEAM = CZ89KDXUJ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ragnarok/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,6 +302,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.MKL.Ragnarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,9 +323,10 @@
 				DEVELOPMENT_TEAM = CZ89KDXUJ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ragnarok/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +336,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.MKL.Ragnarok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
